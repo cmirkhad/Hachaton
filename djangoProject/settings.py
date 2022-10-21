@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'bookadmin',
-    'user',
+    'bookuser',
     'cloudinary_storage',
     'cloudinary'
 ]
@@ -133,3 +133,5 @@ CLOUDINARY_STORAGE = {
     'API_KEY': '832799378174446',
     'API_SECRET': 'a-97lw0wHwShm4XTlIIgTG_wUV8',
 }
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
