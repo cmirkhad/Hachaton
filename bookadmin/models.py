@@ -1,6 +1,5 @@
 from django.db import models
 
-
 # Create your models here.
 class Books(models.Model):
     title = models.CharField(max_length=256)
@@ -15,7 +14,4 @@ class Books(models.Model):
 class Author(models.Model):
     name = models.CharField(max_length=120)
     surname = models.CharField(max_length=120)
-
-    def get_contex_date(self, **kwargs):
-        book = Book.objects.get()
 
