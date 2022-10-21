@@ -19,7 +19,7 @@ class Category(models.Model):
 class Books(models.Model):
     title = models.CharField(max_length=256)
     description = models.TextField()
-    image = models.ImageField(upload_to='/')
+    image = models.ImageField(upload_to='images')
     publisher = models.ForeignKey(Publisher, on_delete=models.PROTECT, blank=True, null=True)
     category = models.ManyToManyField(Category)
     author = models.ForeignKey(Author, on_delete=models.PROTECT)
