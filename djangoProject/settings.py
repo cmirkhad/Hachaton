@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'bookadmin',
     'bookuser',
     'cloudinary_storage',
-    'cloudinary'
+    'cloudinary',
 ]
 
 MIDDLEWARE = [

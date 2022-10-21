@@ -1,7 +1,12 @@
 from django.contrib import admin
 
-from Hachaton.bookadmin.models import Books, Author, Publisher
+from .models import Books, Author, Publisher, Category
 
-admin.site.register(Books)
 admin.site.register(Author)
-admin.site.register()
+admin.site.register(Publisher)
+admin.site.register(Books)
+admin.site.register(Category)
+
+
+
+
