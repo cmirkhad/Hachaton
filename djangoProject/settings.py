@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'bookadmin',
-    'user'
+    'user',
+    'cloudinary_storage',
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dmiqbe8ks',
+    'API_KEY': '832799378174446',
+    'API_SECRET': 'a-97lw0wHwShm4XTlIIgTG_wUV8',
+}
