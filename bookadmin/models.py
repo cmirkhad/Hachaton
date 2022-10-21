@@ -6,8 +6,6 @@ class Books(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='images')
     publisher = models.CharField(max_length=256)
-    # category = models.ForeignKey('Category')
-    # author = models.ForeignKey('Author')
     count = models.PositiveIntegerField()
     reserved_c = models.PositiveIntegerField()
 
